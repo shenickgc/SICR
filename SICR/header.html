@@ -1,0 +1,94 @@
+<link href="/SICR/css/materialdesignicons.css" type="text/css" rel="stylesheet"/>
+<link href="/SICR/css/iconos.css" type="text/css" rel="stylesheet"/>
+<link href="/SICR/css/materialize.css" type="text/css" rel="stylesheet"/>
+<link href="/SICR/css/style.css" type="text/css" rel="stylesheet"/>
+<link href="/SICR/css/formularioaspirantes.css" type="text/css" rel="stylesheet"/>
+<div class="center-align">
+	<img src="/SICR/img/logo.png" alt="Logotipos" class="responsive-img" width="100%" height="100%">
+	<h3 class="flow-text hide-on-small-only">Sistema Gestor de Cursos</h3>
+</div>
+<!--Menus despleables (Ojo, solo se usan en modo desktop), para modo móvil en el mismo <li> se hace la parte desplegable-->
+<ul id="dropdown-alumnos" class="dropdown-content">
+	<li><a href="/SICR/alumnos/AltaAspirante.php">Alta de aspirante</a></li>
+	<li><a href="/SICR/alumnos/ClasificacionAspirante.php">Clasificación de aspirante</a></li>
+	<li><a href="/SICR/alumnos/ConsultaAspirante.php">Consulta de aspirante</a></li>
+	<li><a href="/SICR/alumnos/reporte_aspirante.php">Credencial de aspirante</a></li>		
+</ul>
+<ul id="dropdown-profesores" class="dropdown-content">
+	<li><a href="/SICR/profesores/AltaProfesor.php">Alta de profesor</a></li>
+	<li><a href="/SICR/profesores/ConsultaProfesor.php">Consulta de profesor</a></li>
+</ul>
+<ul id="dropdown-materia" class="dropdown-content">
+	<li><a href="/SICR/materias/AltaMaterias.php">Alta de materia</a></li>
+	<li><a href="/SICR/materias/ConsultaMaterias.php">Consulta de materias</a></li>
+	<li><a href="/SICR/materias/CargaMaterias.php">Carga de materias</a></li>		
+</ul>
+<ul id="dropdown-grupo" class="dropdown-content">
+	<li><a href="/SICR/grupos/AltaGrupo.php">Alta de grupos</a></li>
+	<li><a href="/SICR/grupos/ConsultaGrupo.php">Consulta de grupos</a></li>	
+</ul>
+<!--Fin menús despleables-->
+
+<!--Barra de navegación en modo de escritorio -->
+<nav class="teal">
+	<div class="nav-wrapper container">
+		<a href="#!" class="brand-logo hide-on-large-only">Semestre cero</a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		<ul class="left hide-on-med-and-down">
+			<li><a href="index.php">Inicio</a></li>
+			<li><a class="dropdown-button" href="#" data-activates="dropdown-alumnos">Aspirantes<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="dropdown-button" href="#" data-activates="dropdown-profesores">Profesores<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="dropdown-button" href="#" data-activates="dropdown-materia">Materias<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="dropdown-button" href="#" data-activates="dropdown-grupo">Grupos<i class="material-icons right">arrow_drop_down</i></a></li>
+		</ul>
+	</div>
+</nav>
+<!-- Barra de navegación para moviles -->
+<ul class="side-nav" id="mobile-demo">
+	<li><div class="userView">
+		<div class="background">
+			<img src="img/tec_morelia.jpg" class="responsive-img" alt="Background">
+		</div>
+		<a href="#!user"><img class="circle" src="img/itm_logo.png" alt="Encabezado"></a>
+		<a href="#!name"><span class="white-text name">Semestre cero</span></a>
+		<a href="#!email"><span class="white-text email">System.out_develop@gmail.com</span></a>
+	</div></li>
+	<li><a href="index.php">Inicio</a></li>
+	<li class="no-padding">
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<div class="collapsible-header black-text">Aspirantes <i class="right material-icons">arrow_drop_down</i></div> 
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="/SICR/alumnos/AltaAspirante.php">Alta de aspirantes</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</li>
+	<li class="no-padding">
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<div class="collapsible-header black-text">Profesores <i class="right material-icons">arrow_drop_down</i></div> 
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="/SICR/profesores/AltaProfesor.php">Alta de profesores</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</li>
+	<li class="no-padding">
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<div class="collapsible-header black-text">Materias <i class="right material-icons">arrow_drop_down</i></div> 
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="/SICR/alumnos/alta_materia.php">Alta de Materias</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</li>
+	
+</ul>

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Roboto", Arial;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 3px grey;
+}
+
+.contenedor-formulario {
+  width: 100%;
+  color: #fafafa;
+  padding: 50px;
+}
+.contenedor-formulario .formulario {
+  width: 100%;
+  margin: auto;
+}
+.contenedor-formulario .formulario .input-group {
+  position: relative;
+  margin-bottom: 32px;
+}
+.contenedor-formulario .formulario .input-group input[type="text"],
+.contenedor-formulario .formulario .input-group input[type="email"],
+.contenedor-formulario .formulario .input-group input[type="password"] {
+  font-family: "Roboto", Arial;
+  font-size: 16px;
+  color: #009688;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #d2d2d2;
+}
+.contenedor-formulario .formulario .input-group input[type="text"]:focus, .contenedor-formulario .formulario .input-group input[type="text"]:active,
+.contenedor-formulario .formulario .input-group input[type="email"]:focus,
+.contenedor-formulario .formulario .input-group input[type="email"]:active,
+.contenedor-formulario .formulario .input-group input[type="password"]:focus,
+.contenedor-formulario .formulario .input-group input[type="password"]:active {
+  outline: none;
+  border-bottom: 2px solid #009688;
+}
+.contenedor-formulario .formulario .input-group input[type="text"].error,
+.contenedor-formulario .formulario .input-group input[type="email"].error,
+.contenedor-formulario .formulario .input-group input[type="password"].error {
+  border-bottom: 2px solid #D32F2F;
+}
+.contenedor-formulario .formulario .input-group input[type="text"].error + label,
+.contenedor-formulario .formulario .input-group input[type="email"].error + label,
+.contenedor-formulario .formulario .input-group input[type="password"].error + label {
+  color: #D32F2F;
+}
+.contenedor-formulario .formulario .input-group label {
+  color: #959494;
+}
+.contenedor-formulario .formulario .input-group label.label {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+.contenedor-formulario .formulario .input-group label.label.active {
+  top: -12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #959494;
+}
+.contenedor-formulario .formulario .input-group.checkbox label, .contenedor-formulario .formulario .input-group.radio label {
+  display: inline-block;
+  cursor: pointer;
+  color: #009688;
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 1em;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contenedor-formulario .formulario .input-group.checkbox label:hover, .contenedor-formulario .formulario .input-group.radio label:hover {
+  background: #d2d2d2;
+}
+.contenedor-formulario .formulario .input-group.checkbox label:before, .contenedor-formulario .formulario .input-group.radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid #009688;
+}
+.contenedor-formulario .formulario .input-group.error label {
+  color: #D32F2F;
+}
+.contenedor-formulario .formulario .input-group.error label:hover {
+  background: rgba(211, 47, 47, 0.2);
+}
+.contenedor-formulario .formulario .input-group.error label:before {
+  border: 2px solid #D32F2F;
+}
+.contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+  display: none;
+}
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label:before {
+  display: none;
+}
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label {
+  padding: 5px 15px;
+  background: #009688;
+  border-radius: 2px;
+  color: #fafafa;
+}
+.contenedor-formulario .formulario .input-group.checkbox label:before {
+  border-radius: 3px;
+}
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"] {
+  display: none;
+}
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label:before {
+  display: none;
+}
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label {
+  background: #009688;
+  color: #fafafa;
+  padding: 5px 15px;
+}
+.contenedor-formulario .formulario input[type="submit"] {
+  background: #009688;
+  border-radius: 1px;
+  border: 2px solid #fafafa;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", Arial;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contenedor-formulario .formulario input[type="submit"]:hover {
+  background: #00b09f;
+}
+
+
+/* ==========  Select Field Variables ========== */
+/* ==========  Select Field ========== */
+/* Style Select Field */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: rgba(0,0,0, 0.26);
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+
+/* Remove focus */
+select:focus {
+  outline: none;
+}
+
+/* Hide label */
+.mdl-selectfield label {
+  display: none;
+}
+
+/* Use custom arrow */
+.mdl-selectfield select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative;
+}
+.mdl-selectfield:after {
+  position: absolute;
+  top: 0.75em;
+  right: 0.5em;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  border-top: 0.375em solid rgba(0,0,0, 0.12);
+  pointer-events: none;
+}
+
+/* ==========  Demo CSS ========== */
+
+
+.demo {
+  width: 200px;
+  padding: 20px;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -2em;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+#view-source {
+      right: 0;
+      bottom: 0;
+      color: blue;
+       float: right;
+}
+.mdl-color--accent{background-color:#ff4081 !important}
+.mdl-color--accent-contrast{background-color:#fff !important}
+.mdl-color-text--primary{color:#3f51b5 !important}
+.mdl-color-text--accent-contrast{color:#fff !important}
+
+.mdl-button .mdl-badge[data-badge]:after{top:-10px;right:-5px}.mdl-badge.mdl-badge--no-background[data-badge]:after{color:#ff4081;background:rgba(255,255,255,.2);box-shadow:0 0 1px gray}.mdl-badge.mdl-badge--overlap{margin-right:10px}.mdl-badge.mdl-badge--overlap:after{right:-10px}.mdl-button{background:0 0;border:none;border-radius:2px;color:#000;position:relative;height:36px;margin:0;min-width:64px;padding:0 16px;display:inline-block;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:none;cursor:pointer;text-decoration:none;text-align:center;line-height:36px;vertical-align:middle}.mdl-button::-moz-focus-inner{border:0}.mdl-button:hover{background-color:rgba(158,158,158,.2)}.mdl-button:focus:not(:active){background-color:rgba(0,0,0,.12)}.mdl-button:active{background-color:rgba(158,158,158,.4)}.mdl-button.mdl-button--colored{color:#3f51b5}.mdl-button.mdl-button--colored:focus:not(:active){background-color:rgba(0,0,0,.12)}input.mdl-button[type="submit"]{-webkit-appearance:none}.mdl-button--raised{background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}.mdl-button--raised:active{box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);background-color:rgba(158,158,158,.4)}.mdl-button--raised:focus:not(:active){box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);background-color:rgba(158,158,158,.4)}.mdl-button--raised.mdl-button--colored{background:#3f51b5;color:#fff}.mdl-button--raised.mdl-button--colored:hover{background-color:#3f51b5}.mdl-button--raised.mdl-button--colored:active{background-color:#3f51b5}.mdl-button--raised.mdl-button--colored:focus:not(:active){background-color:#3f51b5}.mdl-button--raised.mdl-button--colored .mdl-ripple{background:#fff}.mdl-button--fab{border-radius:50%;font-size:24px;height:56px;margin:auto;min-width:56px;width:56px;padding:0;overflow:hidden;background:rgba(158,158,158,.2);box-shadow:0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);position:relative;line-height:normal}.mdl-button--fab .material-icons{position:absolute;top:50%;left:50%;-webkit-transform:translate(-12px,-12px);transform:translate(-12px,-12px);line-height:24px;width:24px}.mdl-button--fab.mdl-button--mini-fab{height:40px;min-width:40px;width:40px}.mdl-button--fab .mdl-button__ripple-container{border-radius:50%;-webkit-mask-image:-webkit-radial-gradient(circle,#fff,#000)}.mdl-button--fab:active{box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);background-color:rgba(158,158,158,.4)}.mdl-button--fab:focus:not(:active){box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);background-color:rgba(158,158,158,.4)}.mdl-button--fab.mdl-button--colored{background:#ff4081;color:#fff}.mdl-button--fab.mdl-button--colored:hover{background-color:#ff4081}.mdl-button--fab.mdl-button--colored:focus:not(:active){background-color:#ff4081}.mdl-button--fab.mdl-button--colored:active{background-color:#ff4081}.mdl-button--fab.mdl-button--colored .mdl-ripple{background:#fff}.mdl-button--icon{border-radius:50%;font-size:24px;height:32px;margin-left:0;margin-right:0;min-width:32px;width:32px;padding:0;overflow:hidden;color:inherit;line-height:normal}.mdl-button--icon .material-icons{position:absolute;top:50%;left:50%;-webkit-transform:translate(-12px,-12px);transform:translate(-12px,-12px);line-height:24px;width:24px}.mdl-button--icon.mdl-button--mini-icon{height:24px;min-width:24px;width:24px}.mdl-button--icon.mdl-button--mini-icon .material-icons{top:0;left:0}.mdl-button--icon .mdl-button__ripple-container{border-radius:50%;-webkit-mask-image:-webkit-radial-gradient(circle,#fff,#000)}.mdl-button__ripple-container{display:block;height:100%;left:0;position:absolute;top:0;width:100%;z-index:0;overflow:hidden}.mdl-button[disabled] .mdl-button__ripple-container .mdl-ripple,.mdl-button.mdl-button--disabled .mdl-button__ripple-container .mdl-ripple{background-color:transparent}.mdl-button--primary.mdl-button--primary{color:#3f51b5}.mdl-button--primary.mdl-button--primary .mdl-ripple{background:#fff}.mdl-button--primary.mdl-button--primary.mdl-button--raised,.mdl-button--primary.mdl-button--primary.mdl-button--fab{color:#fff;background-color:#3f51b5}.mdl-button--accent.mdl-button--accent{color:#ff4081}.mdl-button--accent.mdl-button--accent .mdl-ripple{background:#fff}.mdl-button--accent.mdl-button--accent.mdl-button--raised,.mdl-button--accent.mdl-button--accent.mdl-button--fab{color:#fff;background-color:#ff4081}.mdl-button[disabled][disabled],.mdl-button.mdl-button--disabled.mdl-button--disabled{color:rgba(0,0,0,.26);cursor:default;background-color:transparent}.mdl-button--fab[disabled][disabled],.mdl-button--fab.mdl-button--disabled.mdl-button--disabled{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.26)}.mdl-button--raised[disabled][disabled],.mdl-button--raised.mdl-button--disabled.mdl-button--disabled{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.26);box-shadow:none}.mdl-button--colored[disabled][disabled],.mdl-button--colored.mdl-button--disabled.mdl-button--disabled{color:rgba(0,0,0,.26)}.mdl-button .material-icons{vertical-align:middle}
+
+
